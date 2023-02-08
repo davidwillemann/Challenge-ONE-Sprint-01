@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Decodificador de Texto ALURA/ORACLE</title>
+    <link rel="stylesheet" href="style/style.css">
+    <link rel="icon" 
+      type="image/png" 
+      href="images/decodificar.png" />
+</head>
+<body>
+
+    <!-- LOGO -->
+    <header>
+        <img src="images/logo.png" alt="Logo do site: letra A de Alura" id="logo">
+    </header>
+
+<!-- SEÇÕES DE INSERIR O TEXTO E RESULTADO -->
+    <main>   
+        <section id="solicitacao">
+
+            <textarea
+                placeholder="digite seu texto"
+                class="inputCriptografar"
+                id="texto"></textarea>
+        </section>
+
+        <section id="resultado">
+            <div id="secaoResultado">
+                <img src="images/lupa.png" alt="Personagem mágico olhando na lupa.">
+                <textarea id="output-resultado" placeholder=""></textarea>
+                <button id="copiar" class="botaoCopy" onclick="copiaTexto()">Copiar</button>
+            </div>
+        </section>
+    </main>
+
+<!-- SESSÃO DOS BOTÕES -->
+    <section id="botoes">
+        <img src="images/aviso.png" alt="Alerta">
+        <p>Digite apenas letras minúsculas e sem acento.</p>
+        <button class="botao" id="criptografar" onclick="criptografa()">
+            Criptografar
+        </button>
+        <button class="botao" id="descriptografar" onclick="descriptografa()">
+            Descriptografar
+        </button>
+    </section>
+
+<!-- RODAPÉ -->
+    <footer class="rodape"><p>Desenvolvido David Pedro Willemann - Challenge Encripter | Turma 3 | One Next Education - Alura/Oracle</p></footer>
+
+    <!-- SCRIPT -->
+    <script src="script/script.js"></script>
+</body>
+</html>
